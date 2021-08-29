@@ -7,8 +7,9 @@
         <Authors>Mathieu De Raedt</Authors>
         <Description>Common library maintained by Mathieu De raedt</Description>
         <PackageLicenseUrl>https://github.com/MathieuDR/Common/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>
-        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+        <PackageVersion />
     </PropertyGroup>
 
 </Project>
