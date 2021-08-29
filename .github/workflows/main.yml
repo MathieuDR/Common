@@ -56,6 +56,6 @@ jobs:
         if: ${{ always() }}
 
       - name: Push
-        run: dotnet nuget push MathieuDR.Common.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
+        run: dotnet nuget push ./MathieuDR.Common.${VERSION}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
         env:
           NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
