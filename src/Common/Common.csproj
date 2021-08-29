@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PackageId>MathieuDR.Common</PackageId>
+        <Title>Common librarl</Title>
+        <Authors>Mathieu De Raedt</Authors>
+        <Description>Common library maintained by Mathieu De raedt</Description>
+        <PackageLicenseUrl>https://github.com/MathieuDR/Common/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>
+        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    </PropertyGroup>
+
+</Project>
