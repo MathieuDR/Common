@@ -6,10 +6,9 @@
         <Title>Common librarl</Title>
         <Authors>Mathieu De Raedt</Authors>
         <Description>Common library maintained by Mathieu De raedt</Description>
-        <PackageLicenseUrl>https://github.com/MathieuDR/Common/blob/main/LICENSE</PackageLicenseUrl>
+        <license>https://github.com/MathieuDR/Common/blob/main/LICENSE</license>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>
-        <PackageVersion />
+        <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>        
         <PackageTags>Mathieu,MathieuDR,Common,ySomic</PackageTags>
     </PropertyGroup>
 
