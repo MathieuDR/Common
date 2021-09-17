@@ -2,11 +2,11 @@ using FluentAssertions;
 using Xunit;
 
 namespace Common.tests {
-    public class NullValueDictionaryTests {
+    public class DefaultValueDictionaryTests {
         [Fact]
         public void CanRetrieveValueInDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar", "myoutput");
 
             //Act
@@ -19,7 +19,7 @@ namespace Common.tests {
         [Fact]
         public void CanRetrieveValueInDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar", "myoutput");
 
             //Act
@@ -33,7 +33,7 @@ namespace Common.tests {
         [Fact]
         public void CanRetrieveValueInFilledDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar", "myoutput");
             dict.Add("myVar2", "sast");
 
@@ -47,7 +47,7 @@ namespace Common.tests {
         [Fact]
         public void CanRetrieveValueInFilledDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar", "myoutput");
             dict.Add("myVar2", "arstarst");
             
@@ -62,7 +62,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveNullValueInDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
 
             //Act
             var value = dict["myVar"];
@@ -74,7 +74,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveNullValueInDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
 
             //Act
             var result = dict.TryGetValue("myVar", out var value);
@@ -87,7 +87,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveNullValueInFilledDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar2", "sast");
 
             //Act
@@ -100,7 +100,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveNullValueInFilledDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, string>();
+            var dict = new DefaultDictionary<string, string>();
             dict.Add("myVar2", "arstarst");
             
             //Act
@@ -115,7 +115,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveDefaultValueInDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, int>();
+            var dict = new DefaultDictionary<string, int>();
 
             //Act
             var value = dict["myVar"];
@@ -127,7 +127,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveDefaultValueInDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, int>();
+            var dict = new DefaultDictionary<string, int>();
 
             //Act
             var result = dict.TryGetValue("myVar", out var value);
@@ -140,7 +140,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveDefaultValueInFilledDictionaryWithBrackets() {
             //Arrange
-            var dict = new NullValueDictionary<string, int>();
+            var dict = new DefaultDictionary<string, int>();
             dict.Add("myVar2", 123);
 
             //Act
@@ -153,7 +153,7 @@ namespace Common.tests {
         [Fact]
         public void RetrieveDefaultValueInFilledDictionaryWithTryGetMethod() {
             //Arrange
-            var dict = new NullValueDictionary<string, int>();
+            var dict = new DefaultDictionary<string, int>();
             dict.Add("myVar2", 12312);
             
             //Act
