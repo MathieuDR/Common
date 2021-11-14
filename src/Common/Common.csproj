@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <PackageId>MathieuDR.Common</PackageId>
         <Title>Common librarl</Title>
         <Authors>Mathieu De Raedt</Authors>
@@ -9,7 +9,8 @@
         <license>https://github.com/MathieuDR/Common/blob/main/LICENSE</license>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>        
-        <PackageTags>Mathieu,MathieuDR,Common,ySomic</PackageTags>
+        <PackageTags>Mathieu,MathieuDR,Common,ySomic</PackageTags>        
+        <LangVersion>10</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>

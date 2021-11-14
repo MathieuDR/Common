@@ -4,6 +4,7 @@ using System.Linq;
 using Common.Extensions;
 using FluentAssertions;
 using Xunit;
+#pragma warning disable CS0618
 
 namespace Common.tests.Extensions.CollectionExtensionTests {
     public partial class CollectionExtensionTests {
@@ -13,7 +14,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(100);
 
             //Act
-            var chunks = listToChunk.Chunk(10);
+            var chunks = Common.Extensions.CollectionExtensions.Chunk(listToChunk, 10);
 
             //Assert
             chunks.Should().NotBeEmpty();
@@ -25,7 +26,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(100);
 
             //Act
-            var chunks = listToChunk.Chunk(10);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 10);
 
             //Assert
             chunks.Should().HaveCount(10);
@@ -37,7 +38,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(105);
 
             //Act
-            var chunks = listToChunk.Chunk(10);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 10);
 
             //Assert
             chunks.Should().HaveCount(11);
@@ -49,7 +50,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(20);
 
             //Act
-            var chunks = listToChunk.Chunk(10);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 10);
 
             //Assert
             chunks.First().Should().HaveCount(10);
@@ -61,7 +62,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(25);
 
             //Act
-            var chunks = listToChunk.Chunk(10);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 10);
 
             //Assert
             chunks.Last().Should().HaveCount(5);
@@ -73,7 +74,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(2);
 
             //Act
-            var chunks = listToChunk.Chunk(100);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 100);
 
             //Assert
             chunks.Should().HaveCount(1);
@@ -86,7 +87,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(100);
 
             //Act
-            Action act = () => listToChunk.Chunk(0).ToList();
+            Action act = () =>  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 0).ToList();
 
             //Assert
             act.Should().Throw<InvalidOperationException>();
@@ -99,7 +100,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             var listToChunk = GetList(0);
 
             //Act
-            var chunks = listToChunk.Chunk(100);
+            var chunks =  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 100);
 
             //Assert
             chunks.Should().HaveCount(0);
@@ -111,7 +112,7 @@ namespace Common.tests.Extensions.CollectionExtensionTests {
             List<int> listToChunk = null;
 
             //Act
-            Action act = () => listToChunk.Chunk(5).ToList();
+            Action act = () =>  Common.Extensions.CollectionExtensions.Chunk(listToChunk, 5).ToList();
 
             //Assert
             act.Should().Throw<NullReferenceException>();

@@ -16,14 +16,15 @@ namespace Common.Extensions {
             }
         }
 
+        [Obsolete("Use the dotNed 6 extension method instead")]
         public static IEnumerable<IEnumerable<T>> Chunk<T>(this IEnumerable<T> source, int chunksize) {
             if (chunksize < 1) {
                 throw new InvalidOperationException();
             }
-
+        
             var wrapper = new EnumeratorWrapper<T>(source);
             var currentPos = 0;
-
+        
             try {
                 wrapper.AddRef();
                 while (wrapper.Get(currentPos, out _)) {
