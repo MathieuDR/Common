@@ -10,7 +10,8 @@
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>        
         <PackageTags>Mathieu,MathieuDR,Common,ySomic</PackageTags>        
-        <LangVersion>10</LangVersion>
+        <LangVersion>10</LangVersion>        
+        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>

@@ -6,7 +6,7 @@ namespace Common.Extensions {
         /// <typeparam name="T">Type to cast to</typeparam>
         /// <param name="object">Current object</param>
         /// <returns><paramref name="object"/>, cast to the type of <typeparamref name="T"/></returns>
-        public static T As<T>(this object @object) where T : class => @object as T;
+        public static T? As<T>(this object @object) where T : class => @object as T;
 
 
         /// <summary>
