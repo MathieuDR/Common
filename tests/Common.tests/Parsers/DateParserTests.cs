@@ -28,6 +28,7 @@ namespace Common.tests.Parsers {
         [InlineData("at 15h", "2021-12-01 15:00:00")]
         [InlineData("I'll go back 8pm today", "2021-12-01 20:00:00")]
         [InlineData("14/12/2021 18:00", "2021-12-14 18:00:00")]
+        [InlineData("22th dec 23:00", "2021-12-22 23:00:00")]
         public void CanParseFutureDates(string dateString, string parseAbleDate) {
             DateTime reference = new DateTime(2021, 12, 1, 4, 10, 0);
             var futureDateResult = dateString.ToFutureDate(referenceDate: reference);
@@ -36,6 +37,16 @@ namespace Common.tests.Parsers {
             futureDateResult.Value.Should().Be(DateTime.Parse(parseAbleDate));
         }
         
+        [Theory]
+        [InlineData("22th november 23:00", "2021-11-22 23:00:00", "2021-11-21 14:12:30")]
+        public void CanParseFutureDatesWithReference(string dateString, string parseAbleDate, string parseAbleReferenceDate) {
+            DateTime reference = DateTime.Parse(parseAbleReferenceDate);
+            var futureDateResult = dateString.ToFutureDate(referenceDate: reference);
+
+            futureDateResult.IsSuccess.Should().BeTrue();
+            futureDateResult.Value.Should().Be(DateTime.Parse(parseAbleDate));
+        }
+
         [Theory]
         [InlineData("8:30", "2021-12-01 08:30:00")]
         [InlineData("8h30m", "2021-12-01 08:30:00")]

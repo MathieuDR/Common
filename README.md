@@ -1,3 +1,5 @@
+[![.NET](https://github.com/MathieuDR/Common/actions/workflows/main.yml/badge.svg)](https://github.com/MathieuDR/Common/actions/workflows/main.yml)
+
 # Common
 My common repository with handy tricks and methods.
 
