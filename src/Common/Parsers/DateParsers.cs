@@ -4,7 +4,7 @@ using FluentResults;
 using Microsoft.Recognizers.Text;
 using Microsoft.Recognizers.Text.DateTime;
 
-namespace Common.Parsers {
+namespace MathieuDR.Common.Parsers {
     public static class DateParsers {
         public static Result<DateTime> ToFutureDate(this string query, DateTime? referenceDate = null,
             string culture = Culture.English) {

@@ -1,7 +1,7 @@
-using Common.Parsers;
+using MathieuDR.Common.Parsers;
 using Xunit;
 
-namespace Common.tests.Parsers; 
+namespace MathieuDR.Common.tests.Parsers; 
 
 public class NumberParserTests {
 	[Theory]

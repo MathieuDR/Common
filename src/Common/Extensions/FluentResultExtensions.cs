@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentResults;
 
-namespace Common.Extensions {
+namespace MathieuDR.Common.Extensions {
     public static class FluentResultExtensions {
         private static readonly string DefaultSeparator = Environment.NewLine;
 

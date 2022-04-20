@@ -1,4 +1,4 @@
-namespace Common.Parsers; 
+namespace MathieuDR.Common.Parsers; 
 
 public static class NumberParser {
 	public static decimal ParseToDecimal(string query) {

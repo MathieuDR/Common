@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Common.tests.Extensions.CollectionExtensionTests {
+namespace MathieuDR.Common.tests.Extensions.CollectionExtensionTests {
     public partial class CollectionExtensionTests {
         private List<int> GetList(int count) {
             var r = new Random();

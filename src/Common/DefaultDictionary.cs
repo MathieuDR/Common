@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Common {
+namespace MathieuDR.Common {
     public class DefaultDictionary<TKey, TValue> : Dictionary<TKey, TValue> {
         public DefaultDictionary() { }
         public DefaultDictionary(IDictionary<TKey, TValue> dictionary) : base(dictionary) { }

@@ -1,6 +1,6 @@
 using System;
 
-namespace Common.Extensions {
+namespace MathieuDR.Common.Extensions {
     public static class FunctionalExtensions {
         /// <summary>
         ///     Run the <see cref="Action" /> with <paramref name="parameter" /> passed in as a parameter.

@@ -1,4 +1,4 @@
-namespace Common.Extensions {
+namespace MathieuDR.Common.Extensions {
     public static class Casting {
         /// <summary>
         ///     Uses the AS keyword

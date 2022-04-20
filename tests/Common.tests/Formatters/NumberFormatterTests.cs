@@ -1,8 +1,8 @@
-using Common.Formatters;
 using FluentAssertions;
+using MathieuDR.Common.Formatters;
 using Xunit;
 
-namespace Common.tests.Formatters; 
+namespace MathieuDR.Common.tests.Formatters; 
 
 public class NumberFormatterTests {
 	

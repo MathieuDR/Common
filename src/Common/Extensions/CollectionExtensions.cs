@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Common.Extensions {
+namespace MathieuDR.Common.Extensions {
     public static class CollectionExtensions {
         /// <summary>
         ///     Performs the specified <paramref name="action" /> on each element in the current <paramref name="enumerable" />;

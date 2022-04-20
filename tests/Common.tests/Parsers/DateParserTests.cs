@@ -1,10 +1,10 @@
 using System;
-using Common.Parsers;
 using FluentAssertions;
+using MathieuDR.Common.Parsers;
 using Microsoft.Recognizers.Text;
 using Xunit;
 
-namespace Common.tests.Parsers {
+namespace MathieuDR.Common.tests.Parsers {
     public class DateParserTests {
         [Theory]
         [InlineData("8:30", "2021-12-01 08:30:00")]

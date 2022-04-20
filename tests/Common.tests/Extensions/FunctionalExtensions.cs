@@ -1,9 +1,9 @@
 using System;
-using Common.Extensions;
+using MathieuDR.Common.Extensions;
 using NSubstitute;
 using Xunit;
 
-namespace Common.tests.Extensions {
+namespace MathieuDR.Common.tests.Extensions {
     public class FunctionalExtensions {
         [Fact]
         public void ApplyShouldApply() {

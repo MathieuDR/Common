@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Common.Formatters; 
+namespace MathieuDR.Common.Formatters; 
 
 public static class NumberFormatter {
 	public static string FormatDecimal(decimal number, bool? positiveSigned = null, bool zeroAsStripe = true) {

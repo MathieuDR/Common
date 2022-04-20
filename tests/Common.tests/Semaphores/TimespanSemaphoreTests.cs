@@ -1,15 +1,13 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using Common.Semaphores;
 using FluentAssertions;
+using MathieuDR.Common.Semaphores;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace Common.tests.Semaphores;
+namespace MathieuDR.Common.tests.Semaphores;
 
 public class TimespanSemaphoreTests {
 	private readonly ITestOutputHelper _logger;

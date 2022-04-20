@@ -8,6 +8,10 @@
         <LangVersion>10</LangVersion>
 
         <Nullable>enable</Nullable>
+
+        <AssemblyName>MathieuDR.Common.tests</AssemblyName>
+
+        <RootNamespace>MathieuDR.Common.tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

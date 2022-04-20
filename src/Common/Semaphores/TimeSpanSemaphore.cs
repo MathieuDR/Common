@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Common.Semaphores;
+namespace MathieuDR.Common.Semaphores;
 
 // https://github.com/joelfillmore/JFLibrary/blob/master/JFLibrary/TimeSpanSemaphore.cs
 

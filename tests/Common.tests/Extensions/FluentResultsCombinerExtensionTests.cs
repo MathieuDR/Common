@@ -1,9 +1,9 @@
 using System;
-using Common.Extensions;
 using FluentResults;
+using MathieuDR.Common.Extensions;
 using Xunit;
 
-namespace Common.tests.Extensions {
+namespace MathieuDR.Common.tests.Extensions {
     public class FluentResultsCombinerExtensionTests {
 
         private const string ReasonOne = "Reason one"; 

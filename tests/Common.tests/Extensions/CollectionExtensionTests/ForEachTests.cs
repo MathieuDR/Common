@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Common.Extensions;
+using MathieuDR.Common.Extensions;
 using NSubstitute;
 using Xunit;
 
-namespace Common.tests.Extensions.CollectionExtensionTests {
+namespace MathieuDR.Common.tests.Extensions.CollectionExtensionTests {
     public partial class CollectionExtensionTests {
         [Fact]
         public void ActionIsCalledSameAmountAsItemsInList() {

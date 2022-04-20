@@ -11,7 +11,9 @@
         <RepositoryUrl>https://github.com/MathieuDR/Common</RepositoryUrl>        
         <PackageTags>Mathieu,MathieuDR,Common,ySomic</PackageTags>        
         <LangVersion>10</LangVersion>        
-        <Nullable>enable</Nullable>
+        <Nullable>enable</Nullable>        
+        <AssemblyName>MathieuDR.Common</AssemblyName>        
+        <RootNamespace>MathieuDR.Common</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

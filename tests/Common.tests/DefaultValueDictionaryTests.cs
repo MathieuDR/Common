@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace Common.tests {
+namespace MathieuDR.Common.tests {
     public class DefaultValueDictionaryTests {
         [Fact]
         public void CanRetrieveValueInDictionaryWithBrackets() {

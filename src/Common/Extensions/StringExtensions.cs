@@ -1,6 +1,6 @@
 using System;
 
-namespace Common.Extensions {
+namespace MathieuDR.Common.Extensions {
     public static class StringExtensions {
         /// <summary>
         ///     Prepends <paramref name="toPrepend" /> to <paramref name="base" />.
